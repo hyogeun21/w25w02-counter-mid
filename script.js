@@ -12,16 +12,16 @@ function render(){
 incBtn.addEventListener("click", () => {
   count += 2;
   render();
-})
+});
 
 decBtn.addEventListener("click", () => {
   count -= 2;
   render();
-})
+});
 
 resetBtn.addEventListener("click", () => {
   count = 0;
   render();
-})
+});
 
 render();
