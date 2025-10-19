@@ -5,23 +5,23 @@ const incBtn = document.getElementById("inc");
 const decBtn = document.getElementById("dec");
 const resetBtn = document.getElementById("reset");
 
-function render() {
+function render(){
   countEl.textContent = count;
 }
 
 incBtn.addEventListener("click", () => {
-  count++;
+  count += 2;
   render();
-});
+})
 
 decBtn.addEventListener("click", () => {
-  count--;
+  count -= 2;
   render();
-});
+})
 
 resetBtn.addEventListener("click", () => {
   count = 0;
   render();
-});
+})
 
 render();
